@@ -272,3 +272,30 @@ nav a {
   }
 
 }
+/* Hamburger Menu */
+
+.menu-btn {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 600px) {
+
+  .menu-btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+}
