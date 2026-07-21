@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pawanpawanrashmika-hue.github.io/tech-gaming-hub/sitemap.xml
