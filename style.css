@@ -1,0 +1,190 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  color:white;
+  background:linear-gradient(-45deg,#020617,#0f172a,#062e49,#111827);
+  background-size:400% 400%;
+  animation:bgMove 12s ease infinite;
+}
+
+@keyframes bgMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+/* Navbar */
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
+  background:rgba(2,6,23,.7);
+  backdrop-filter:blur(15px);
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  width:120px;
+  border-radius:50%;
+  animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+ from{
+  box-shadow:0 0 15px #00ccff;
+ }
+ to{
+  box-shadow:0 0 50px #22c55e;
+ }
+}
+
+
+.nav-links{
+ display:flex;
+}
+
+.nav-links a{
+ color:white;
+ text-decoration:none;
+ margin:10px;
+}
+
+
+/* Menu */
+
+.menu-btn{
+ display:none;
+ background:none;
+ border:none;
+ color:white;
+ font-size:30px;
+ cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+ text-align:center;
+ padding:40px 20px;
+}
+
+.hero-img{
+ width:90%;
+ max-width:600px;
+ border-radius:20px;
+}
+
+
+/* Cards */
+
+.cards{
+ display:flex;
+ justify-content:center;
+ gap:20px;
+ flex-wrap:wrap;
+ padding:30px;
+}
+
+.card{
+ width:280px;
+ padding:25px;
+ border-radius:20px;
+ text-align:center;
+ background:rgba(255,255,255,.08);
+ backdrop-filter:blur(10px);
+ border:1px solid rgba(255,255,255,.2);
+ transition:.4s;
+ animation:show 1s;
+}
+
+.card:hover{
+ transform:translateY(-15px) scale(1.05);
+ box-shadow:0 0 30px #00ccff;
+}
+
+
+@keyframes show{
+ from{
+ opacity:0;
+ transform:translateY(40px);
+ }
+ to{
+ opacity:1;
+ transform:translateY(0);
+ }
+}
+
+
+.card button{
+ background:#22c55e;
+ color:white;
+ border:none;
+ padding:12px 25px;
+ border-radius:25px;
+}
+
+
+/* AdSense */
+
+.ad-box{
+ margin:30px;
+ padding:40px;
+ background:#111827;
+ text-align:center;
+ border:1px dashed #64748b;
+}
+
+
+/* Footer */
+
+footer{
+ text-align:center;
+ padding:20px;
+ background:#020617;
+}
+
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.menu-btn{
+ display:block;
+}
+
+.nav-links{
+ display:none;
+ flex-direction:column;
+ width:100%;
+ text-align:center;
+}
+
+.nav-links.active{
+ display:flex;
+}
+
+nav{
+ flex-wrap:wrap;
+}
+
+.card{
+ width:90%;
+}
+
+.hero h1{
+ font-size:28px;
+}
+
+.hero-img{
+hero.png
+}
+
+}
