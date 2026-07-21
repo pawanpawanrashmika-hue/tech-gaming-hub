@@ -188,3 +188,49 @@ hero.png
 }
 
 }
+/* Blog Cards */
+
+.latest-posts {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.latest-posts h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #22c55e;
+}
+
+.card p {
+  color: #cbd5e1;
+}
+
+.card button {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #16a34a;
+}
