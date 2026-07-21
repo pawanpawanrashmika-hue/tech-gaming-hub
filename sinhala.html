@@ -11,6 +11,18 @@ function toggleMenu(){
   document.querySelector("nav").classList.toggle("active");
 }
 </script>
+
+<div class="cookie-banner" id="cookieBanner">
+This website uses cookies to improve your experience.
+<button onclick="acceptCookies()">Accept</button>
+</div>
+
+<script>
+function acceptCookies(){
+document.getElementById("cookieBanner").style.display="none";
+}
+</script>
+
 <body>
 
 <nav>
