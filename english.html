@@ -25,12 +25,33 @@ function acceptCookies(){
 document.getElementById("cookieBanner").style.display="none";
 }
 </script>
+<script>
+function searchPosts() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let cards = document.getElementsByClassName("post-card");
 
+  for (let i = 0; i < cards.length; i++) {
+    let text = cards[i].innerText.toLowerCase();
+
+    if (text.indexOf(input) > -1) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+}
+</script>
 <body>
 <section class="latest-posts">
   <h2>Latest Articles</h2>
 
-  <div class="card">
+<div class="card post-card">
+  <h3>Best Free Fire Tips 2026</h3>
+  <p>Learn the latest Free Fire tips and tricks.</p>
+  <a href="posts/free-fire-tips.html">
+    <button>Read More</button>
+  </a>
+</div>
    <h3>Best Free Fire Tips 2026</h3><p>
 <a href="posts/free-fire-tips.html">Read our Free Fire Tips article</a>
 </p>    
